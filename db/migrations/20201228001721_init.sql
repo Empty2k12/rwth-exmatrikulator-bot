@@ -1,0 +1,5 @@
+CREATE TABLE chatters (
+    telegram_id BIGINT NOT NULL PRIMARY KEY,
+    is_global_admin BOOLEAN NOT NULL DEFAULT FALSE,
+    is_verified BOOLEAN NOT NULL DEFAULT FALSE
+);

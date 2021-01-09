@@ -1,0 +1,10 @@
+version: '3.7'
+services: 
+  pg: 
+    image: postgres:9.5.20 
+    ports: 
+      - "5432:5432" 
+    #volumes: 
+    #  - ./pg:/docker-entrypoint-initdb.d/ 
+    environment: 
+      POSTGRES_PASSWORD: "postgresPW!"
